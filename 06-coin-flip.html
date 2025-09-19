@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coin-flip</title>
+</head>
+<body>
+  <p>Coin Flip </p>
+  <p>Guess wheather it is Heads or Tails</p>
+
+    <button onclick="
+      
+
+      if (randomNumber >= 0 && randomNumber < 1/5) {
+        computerMove = 'heads';
+      } else if (randomNumber >= 1/5 && randomNumber < 1) {
+        computerMove = 'tails';
+      }
+      console.log(computerMove);
+      alert('The coin is flipped Guess it!');
+    ">Flip the coin</button>
+ 
+
+
+    <p>Guess the Coin</p>
+    <button onclick="
+      const guess = 'heads';
+
+      let result = '';
+
+      if (computerMove === guess) {
+        result = 'You Guessed Right';
+      } else {
+        result = 'You Guessed Wrong';
+      }
+
+      alert(`The coin is ${computerMove}. You Chose ${guess}. ${result}`)
+    ">Heads</button>
+
+    <button onclick="
+      const guess = 'tails';
+
+      let result = '';
+
+      if (computerMove === guess) {
+        result = 'You Guessed Right';
+      }  else {
+        result = 'You Guessed Wrong';
+      }
+
+      alert(`The coin is ${computerMove}. You Chose ${guess}. ${result}`)
+    ">Tails</button>
+
+  
+
+  <script>
+    const randomNumber = Math.random();
+
+    let computerMove = '';
+  </script>
+</body>
+</html>

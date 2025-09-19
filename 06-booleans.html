@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booleans</title>
+</head>
+<body>
+
+  <script>
+    // boolean has only two values true false
+    // dont put quates around true and false
+    // comparison operators >,<,>=,<=,===, !==
+    // == tries to convert both values into same types ex(5 == '5.0')
+    // === compares 
+    // comparision operator has lower priority
+
+
+    //if statements
+    /*if (false){
+      console.log('hello');
+    }else{
+      console.log('else');
+    }
+
+    const age = 15;
+
+
+    if (age >= 16) {
+      console.log('You can drive');
+    } else if (age > 14) {
+      console.log('almost There');
+    } else {
+      console.log('You cannot drive');
+    }*/
+
+    /*logical operators
+    //and
+    console.log(true && true);
+    console.log(0.2 >= 0 && 0.2 < 1 / 3);
+
+    //or
+    console.log(true || false);
+
+    //not
+    console.log(!true);
+    */
+
+    //truthy and falsy value
+    // falsy values are 0 '' NaN undefined null <-- except these all are truthy
+     if (5) {
+      console.log('truthy');
+     }
+
+     const cartQuantity = 5;
+
+     if(cartQuantity) {
+      console.log('Cart has prouducts');
+     }
+
+     console.log(!0);
+
+     console.log('test' / 5); // NaN (not a number)
+
+     let variable;
+     console.log(variable);// undefined
+
+    //ternary operator
+    const result = true ? 'truthy' : 'falsy';
+    console.log(result);
+    
+    //guard operator
+    false && console.log('hello');
+
+    //default opeartor
+    const currency = 'EUR' || 'USD';
+    console.log(currency);
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  <script>
+    //functions
+    //let us reuse the code
+    //syntax--> function function_name () {code}
+    //can't start with number 
+    //use a verb/action while naming a function
+
+    //return value;
+    //return ends the function imediatly
+
+    /*
+
+    function function1() {
+      console.log('hello');
+      console.log(2+2);
+    }
+
+    function1();//calling the function
+    function1();
+    
+    */
+
+    //parameters = puts a value into a function
+    //can have morethan one parameters
+    //setting default value for parameters by adding value next
+
+
+    /*
+
+    function calculateTax(cost ,taxPercent = 0.1) {
+      console.log(cost * taxPercent);
+    }
+
+    calculateTax(2000, 0.2);//passing value to function
+    calculateTax(5000, 0.1);
+    
+    */
+
+    function greet(name) {
+      if (!name) {
+        console.log('Hi There!');
+      }
+      console.log(`Hello! ${name}`);
+    }
+
+    greet('sibi');
+    //greet('kumar');
+    greet();
+
+    function convertToFahrenheit(celsius) {
+      console.log((celsius * 9/5)+32);
+    }
+    convertToFahrenheit(25);
+
+
+    function convertToCelsius(fahrenheit) {
+      console.log((fahrenheit - 32) * 5/9);
+    }
+    convertToCelsius(86);
+
+    function convertTemperature(degrees, unit){
+      if (unit === 'C') {
+        console.log((degrees * 9/5)+32 +'F');
+      }
+
+      if (unit === 'F') {
+        console.log((degrees - 32) * 5/9 +'C');
+      }
+      
+    }
+    //convertTemperature(25, 'C');
+    convertTemperature(86, 'F')
+  </script>
+</body>
+</html>

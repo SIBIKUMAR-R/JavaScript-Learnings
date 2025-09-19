@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <button >hello</button>
+  <button class="js-button">second button</button>
+
+  <script>
+    //method = function saved inside an object
+    /*document object model(dom)
+    //the document object represents / models the webpage
+    //the dom combines javascript and html together
+
+    //type coersion
+    //whenever a value comes fromm a dom it will always be string we need to manually convert the type (for string to int use Number() , for type to string use String() )
+
+    // if a string only contains a number and we use /-*(not +) it will be converted into a number for example
+    String(25)
+    console.log('25' - 5); it will do math. don't math with strings
+    
+    document.body.innerHTML = 'hello';
+    document.title = 'Good job!';
+    */
+
+    /*
+    console.log(document.title);
+    document.title = 'changed';// to change the title of page
+
+    console.log(document.body);
+    console.log(document.body.innerHTML);//change the html
+    document.body.innerHTML = '<button>Good job</button>';//changes the button
+
+    //document.querySelector() - let us get any element from  the page and put it inside JavaScript
+    */
+
+    console.log(document.querySelector('button').innerHTML);//syntax
+
+    document.querySelector('button')
+      .innerHTML = 'changed';//change the html inside the button
+
+    const buttonElement = document.querySelector('.js-button');
+    console.log(buttonElement);
+  </script>
+</body>
+</html>

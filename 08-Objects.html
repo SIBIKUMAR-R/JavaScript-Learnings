@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    /*
+    //objects
+    //make code organized;
+    //letus group multiple value together
+    // let us use multiple value together
+
+    //we can't acompare two objects becaosue we are caomparing the reference  which will be false not the valuews insid ethe variable in the object
+    
+    //syntax.
+    const product = {
+      name: 'socks',//property:value pair
+      price: 1090
+    };
+
+    //access the property
+    console.log(product);
+    console.log(product.name);//object.propertyname
+    console.log(product.price);
+
+    product.name = 'cotton socks';//change the value of object
+    console.log(product.name);
+
+    product.newProperty = true;
+    console.log(product);//create a new property in existing object
+
+    delete product.newProperty;
+    console.log(product);//delete the existing property
+    */ 
+    
+    /*
+    const product2 = {
+      name: 'shirt',
+      'delivery-time': '1 day',
+
+      //nested objects
+      rating: {
+        stars : 4.5,
+        count :87
+      },
+      fun: function function1() {
+        console.log('function inside object');
+      }
+    };
+    console.log(product2);
+
+    //bracket notation - let us use properties that don't work with dot notation.
+    console.log(product2['name']);//another way to access the value in object
+
+    console.log(product2.rating.count);//access the nested object
+    product2.fun();//access the function inside the object
+
+    /*Built in objects
+    *JSON - JavaScript Object Notation
+      -a syntax
+      -similar to JavaScript object
+      -but has less features
+      -alwys must be doule quates, and does not support functions in it.
+      -can be understandable by other programming languages
+      -used when we send data between computers
+      -used to store data in it.
+   
+    
+    //converting JavaScript Object to JSON
+    console.log(JSON.stringify(product2));
+
+    
+    const jsonString = JSON.stringify(product2);//convert JSON to JavaScript Object
+    console.log(JSON.prase(jsonString));//convert to JavaScript Object to Json by JSON.parse
+
+    //another built in object is -- localstorage
+    //stores data permantely.
+    //localStorage only supports string
+
+    */
+    //auto boxing
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+  </script>
+</body>
+</html>
